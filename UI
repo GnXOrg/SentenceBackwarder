@@ -1,3 +1,0 @@
-shoes.app :Title => "Test" do
-para "this is a test"
-end
