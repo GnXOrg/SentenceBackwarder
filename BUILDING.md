@@ -11,7 +11,7 @@ Folder with required files when clone the repo:
 SentenceBackwarder/           # Root directory.
 |- build.bat                  # Build file
 |- SentenceBackwarder.rb      # Ruby file of sentence backwarder
-|- BackwardCore.rb            # Ruby file of sentence backwarder
+|- BackwardCore.rb            # Ruby file of Backward core
 ```
 # Window App (cross-platform)
 To build this project, you'll need
