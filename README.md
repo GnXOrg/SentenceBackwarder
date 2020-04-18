@@ -1,5 +1,5 @@
 # SentenceBackwarder
-A app that helps you w/ backwarding sentences. Programmed w/ Ruby.
+An app that helps you w/ backwarding sentences. Programmed w/ Ruby.
 ## What does this do?
 It backwards sentences for u
 ### Why did we created this?
