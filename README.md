@@ -5,4 +5,4 @@ It backwards sentences for u
 ### Why did we created this?
 because we're noob coders and wanted to make sth simple first.
 ### Building
-See BUILDING.md
+See [BUILDING.md](https://github.com/GnXOrg/SentenceBackwarder/blob/master/BUILDING.md)
