@@ -1,12 +1,3 @@
-class BackwardCore
-    def Backwarder(string)
-        begin
-            return string.reverse
-        rescue => exception
-            return ""
-        end
-    end
-end
 puts "Welcome to SentenceBackwarder (v20.04.18)"
 def SentenceBackwarder()
     puts "Type a sentence below to backward it"
