@@ -1,4 +1,13 @@
-# Add the file
+class BackwardCore
+    def Backwarder(string)
+        begin
+            return string.reverse
+        rescue => exception
+            puts "Failed to backward the sentence."
+            return ""
+        end
+    end
+end
 puts "Welcome to SentenceBackwarder (v20.04.18)"
 def SentenceBackwarder()
     puts "Type a sentence below to backward it"
@@ -6,22 +15,14 @@ def SentenceBackwarder()
     if (sentence.length <= 1)
         puts "Length must be 2 or higher to backward!"
     else
-        begin
-            puts "Backwarded sentence: #{sentence.reverse}"
-            answ = askForContinue()
-            if answ then
-                SentenceBackwarder()
-            else
-                return
-            end
-        rescue => exception
-            puts "Failed to backward the sentence."
-            answ = askForContinue()
-            if answ then
-                SentenceBackwarder()
-            else
-                return
-            end
+        backwardCore = BackwardCore.new
+        reversedSentence = backwardCore.Backwarder(sentence)
+        puts "Backwarded sentence: #{sentence.reverse}"
+        answ = askForContinue()
+        if answ then
+            SentenceBackwarder()
+        else
+            return
         end
     end
 end
