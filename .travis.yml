@@ -4,5 +4,3 @@ rvm:
 install: gem install ocra
 script:
 - bundle exec rake build
-- cd
-- ocra --quiet --no-dep-run --console SentenceBackwarder.rb
