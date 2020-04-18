@@ -8,14 +8,34 @@ def SentenceBackwarder()
     else
         begin
             puts "Backwarded sentence: #{sentence.reverse}"
-            puts "Do you want to backward more sentence? (Y/N)"
-            # Incomplete
+            answ = askForContinue()
+            if answ then
+                SentenceBackwarder()
+            else
+                return
+            end
         rescue => exception
-            
+            puts "Failed to backward the sentence."
+            answ = askForContinue()
+            if answ then
+                SentenceBackwarder()
+            else
+                return
+            end
         end
     end
 end
 
 def askForContinue()
-# Placeholder
+    puts "Do you want to backward more sentence? (Y/N)"
+    answer = gets.chomp.downcase
+    if (answer == "y")
+        return true
+    elsif (answer == "n")
+        return false
+    else
+        puts "Invalid choice!"
+        askForContinue()
+    end
 end    
+SentenceBackwarder()
