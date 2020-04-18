@@ -1,3 +1,4 @@
+require 'BackwardCore.rb'
 puts "Welcome to SentenceBackwarder (v20.04.18)"
 def SentenceBackwarder()
     puts "Type a sentence below to backward it"
