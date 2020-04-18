@@ -13,6 +13,12 @@ def SentenceBackwarder()
     sentence = gets.chomp
     if (sentence.length <= 1)
         puts "Length must be 2 or higher to backward!"
+        answ = askForContinue()
+        if answ then
+            SentenceBackwarder()
+        else
+            return
+        end
     else
         backwardCore = BackwardCore.new
         reversedSentence = backwardCore.Backwarder(sentence)
