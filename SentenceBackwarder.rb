@@ -3,7 +3,6 @@ class BackwardCore
         begin
             return string.reverse
         rescue => exception
-            puts "Failed to backward the sentence."
             return ""
         end
     end
@@ -17,7 +16,11 @@ def SentenceBackwarder()
     else
         backwardCore = BackwardCore.new
         reversedSentence = backwardCore.Backwarder(sentence)
-        puts "Backwarded sentence: #{reversedSentence}"
+        if reversedSentence == "" then
+            puts "Failed to backward the sentence."
+        else
+            puts "Backwarded sentence: #{reversedSentence}"
+        end
         answ = askForContinue()
         if answ then
             SentenceBackwarder()
