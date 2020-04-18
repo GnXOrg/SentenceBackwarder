@@ -17,6 +17,7 @@ To build this project, you'll need
 + [Shoes 3.3.7 or better.](http://shoesrb.com/downloads/)
 
 Clone the repo, install Shoes (if you haven't), then open Packager (Start Menu -> Shoes -> Packager)(In Windows), then click **on a directory**, browse UITest.rb then choose anything you want, select target and build it.
+
 Folder with required files when clone the repo:
 ```
 SentenceBackwarder/           # Root directory.
