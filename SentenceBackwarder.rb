@@ -17,7 +17,7 @@ def SentenceBackwarder()
     else
         backwardCore = BackwardCore.new
         reversedSentence = backwardCore.Backwarder(sentence)
-        puts "Backwarded sentence: #{sentence.reverse}"
+        puts "Backwarded sentence: #{reversedSentence}"
         answ = askForContinue()
         if answ then
             SentenceBackwarder()
