@@ -1,4 +1,4 @@
-require 'BackwardCore.rb'
+require './BackwardCore.rb'
 # require 'green_shoes'
 Shoes.app :title => "SentenceBackwarder", :width => 600, :height => 200 do
   background darkturquoise
