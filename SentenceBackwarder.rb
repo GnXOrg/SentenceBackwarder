@@ -32,10 +32,12 @@ def askForContinue()
     if (answer == "y")
         return true
     elsif (answer == "n")
+        puts "Thank you for using SentenceBackwarder! Made by iamdumdum1234 and teppyboi."
         return false
     else
-        puts "Invalid choice!"
+        puts "Invalid choice! Please try again"
         askForContinue()
     end
 end    
 SentenceBackwarder()
+
